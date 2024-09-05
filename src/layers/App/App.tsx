@@ -1,8 +1,9 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import LogoButton from "../../site/components/LogoButton";
 import Clock from "../Clock/Clock";
 import Calculator from "../Calculator/Calculator";
 import Home from "../Home/Home";
-import LogoButton from "../../site/components/LogoButton";
+import Quotes from "../Quotes/Quotes";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="clock" element={<Clock />} />
           <Route path="calculator" element={<Calculator />} />
+          <Route path="quotes" element={<Quotes />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
