@@ -28,6 +28,7 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, navigateTo }) => {
     </div>
   );
 };
+// hello
 
 class Home extends React.Component {
   render() {
