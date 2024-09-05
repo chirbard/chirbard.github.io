@@ -63,7 +63,7 @@ const AddBackgroud = {
   backgroundPosition: "center",
 };
 const AddFont = {
-  fontFamily: "Poppins",
+  fontFamily: "Poppins, sans-serif",
 };
 const MainStyle = { ...AddBackgroud, ...AddFont };
 
