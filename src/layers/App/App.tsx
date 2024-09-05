@@ -4,6 +4,7 @@ import Clock from "../Clock/Clock";
 import Calculator from "../Calculator/Calculator";
 import Home from "../Home/Home";
 import Quotes from "../Quotes/Quotes";
+import Markdown from "../Markdown/Markdown";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="clock" element={<Clock />} />
           <Route path="calculator" element={<Calculator />} />
           <Route path="quotes" element={<Quotes />} />
+          <Route path="markdown" element={<Markdown />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
