@@ -30,11 +30,15 @@ class CalcButton extends React.Component<CalcButtonProps> {
   }
 }
 
-interface AppState {
+const AddFont = {
+  fontFamily: "Poppins, sans-serif",
+};
+
+interface CalculatorState {
   displayValue: string[];
 }
 
-class Calculator extends React.Component<{}, AppState> {
+class Calculator extends React.Component<{}, CalculatorState> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -89,7 +93,10 @@ class Calculator extends React.Component<{}, AppState> {
 
   render() {
     return (
-      <div className="min-h-screen flex justify-center items-center flex-col bg-[#f2f3f9]">
+      <div
+        style={AddFont}
+        className="min-h-screen flex justify-center items-center flex-col bg-[#f2f3f9]"
+      >
         <h1 className="mb-16 font-extrabold text-3xl text-center">
           Neumorphic Calculator
           <br />
