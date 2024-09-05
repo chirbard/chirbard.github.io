@@ -29,7 +29,9 @@ function Layout() {
       <header className="h-24 flex justify-between items-center px-8">
         <p className="font-semibold w-28">BY MARKUS TAMM</p>
         <LogoButton />
-        <p className="font-semibold w-28 text-right">2024</p>
+        <p className="font-semibold w-28 text-right">
+          {new Date().getFullYear()}
+        </p>
       </header>
       <Outlet />
     </div>

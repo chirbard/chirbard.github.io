@@ -32,8 +32,8 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, navigateTo }) => {
 class Home extends React.Component {
   render() {
     return (
-      <div className="flex justify-center items-center mt-8">
-        <div className="grid grid-cols-2 gap-4 m-auto">
+      <div className="flex justify-center items-center my-8">
+        <div className="grid grid-cols-1 gap-4 m-auto md:grid-cols-2">
           <Card
             title="FreeCodeCamp Clock"
             image={clockImage}
