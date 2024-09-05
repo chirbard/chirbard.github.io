@@ -8,8 +8,10 @@ const LogoButton: React.FC = () => {
   };
 
   return (
-    <div className="cursor-pointer w-16 h-16 bg-black rounded-full">
-      {/* <div className="w-16 h-16 rounded-full bg-[#ffffff] block -translate-x-1 -translate-y-1 border-2 border-black hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all"></div> */}
+    <div
+      className="cursor-pointer w-16 h-16 bg-black rounded-full"
+      onClick={handleClick}
+    >
       <svg
         width="64"
         height="64"
@@ -46,16 +48,6 @@ const LogoButton: React.FC = () => {
           </clipPath>
         </defs>
       </svg>
-
-      {/* <img
-        src={logo}
-        alt="FreeCodeCamp Logo"
-        className="w-10 h-10"
-        onClick={handleClick}
-      />
-      <h1 className="text-2xl font-bold" onClick={handleClick}>
-        FreeCodeCamp Projects
-      </h1> */}
     </div>
   );
 };
