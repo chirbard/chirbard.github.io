@@ -8,7 +8,7 @@ const LogoButton: React.FC = () => {
   };
 
   return (
-    <div className="w-16 h-16 bg-black rounded-full">
+    <div className="cursor-pointer w-16 h-16 bg-black rounded-full">
       {/* <div className="w-16 h-16 rounded-full bg-[#ffffff] block -translate-x-1 -translate-y-1 border-2 border-black hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all"></div> */}
       <svg
         width="64"

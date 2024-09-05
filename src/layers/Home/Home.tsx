@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, navigateTo }) => {
   };
 
   return (
-    <div className="w-80 bg-black" onClick={handleClick}>
+    <div className="cursor-pointer w-80 bg-black" onClick={handleClick}>
       <div className="bg-[#ffffff] block -translate-x-1 -translate-y-1 border-2 border-black hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all">
         <img src={image} alt={imageAlt} className="w-80" />
         <h2 className="m-2 font-medium">{title}</h2>
