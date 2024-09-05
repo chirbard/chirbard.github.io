@@ -40,6 +40,7 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Clock from "../Clock/Clock";
 import Calculator from "../Calculator/Calculator";
 import Home from "../Home/Home";
+import LogoButton from "../../site/components/LogoButton";
 
 export default function App() {
   return (
@@ -102,49 +103,7 @@ function Layout() {
       </nav> */}
       <header className="h-24 flex justify-between items-center px-8">
         <p className="font-semibold w-28">BY MARKUS TAMM</p>
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 60 60"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_1_3)">
-            <circle cx="31.2" cy="31.2" r="28.8" fill="black" />
-            <circle
-              cx="28.8"
-              cy="28.8"
-              r="28.56"
-              fill="white"
-              stroke="black"
-              stroke-width="0.48"
-            />
-            <g clip-path="url(#clip1_1_3)">
-              <path
-                d="M18.4026 23.5375L28.8 18.3254L42.1529 25.0191C42.7212 25.304 43.08 25.8852 43.08 26.5209V36.1904C43.08 37.44 41.7643 38.2522 40.6471 37.6922L29.1227 31.9151L18.4026 26.5412C17.1665 25.9215 17.1665 24.1572 18.4026 23.5375Z"
-                stroke="#B12B28"
-                stroke-width="1.44"
-              />
-              <path
-                d="M28.8 32.5587L17.2755 38.3359C15.6796 39.1359 13.8 37.9756 13.8 36.1904V26.5209C13.8 25.6128 14.3126 24.7824 15.1245 24.3754L28.8 17.52V32.5587Z"
-                fill="black"
-              />
-            </g>
-          </g>
-          <defs>
-            <clipPath id="clip0_1_3">
-              <rect width="60" height="60" fill="white" />
-            </clipPath>
-            <clipPath id="clip1_1_3">
-              <rect
-                width="30"
-                height="22.5581"
-                fill="white"
-                transform="translate(13.8 17.52)"
-              />
-            </clipPath>
-          </defs>
-        </svg>
+        <LogoButton />
         <p className="font-semibold w-28 text-right">2024</p>
       </header>
 
