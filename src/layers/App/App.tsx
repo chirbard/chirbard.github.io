@@ -26,10 +26,10 @@ export default function App() {
 function Layout() {
   return (
     <div>
-      <header className="h-24 flex justify-between items-center px-8">
-        <p className="font-semibold w-28">BY MARKUS TAMM</p>
+      <header className="h-24 flex justify-between items-center px-4 md:px-8">
+        <p className="font-semibold w-24">MARKUS TAMM</p>
         <LogoButton />
-        <p className="font-semibold w-28 text-right">
+        <p className="font-semibold w-24 text-right">
           {new Date().getFullYear()}
         </p>
       </header>
