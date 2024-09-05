@@ -37,9 +37,9 @@
 // export default App;
 
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-import Clock from "./Clock";
-import Calculator from "./Calculator";
-import Home from "./Home";
+import Clock from "../Clock/Clock";
+import Calculator from "../Calculator/Calculator";
+import Home from "../Home/Home";
 
 export default function App() {
   return (

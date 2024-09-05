@@ -1,8 +1,8 @@
 import React from "react";
-import markdownImage from "./assets/markdown.png";
-import clockImage from "./assets/clock.png";
-import calcImage from "./assets/calc.png";
-import quoteImage from "./assets/quote.png";
+import markdownImage from "../../site/assets/markdown.png";
+import clockImage from "../../site/assets/clock.png";
+import calcImage from "../../site/assets/calc.png";
+import quoteImage from "../../site/assets/quote.png";
 import { useNavigate } from "react-router-dom";
 
 interface CardProps {
