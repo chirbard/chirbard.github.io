@@ -4,6 +4,7 @@ import clockImage from '../../site/assets/clock.png';
 import calcImage from '../../site/assets/calc.png';
 import quoteImage from '../../site/assets/quote.png';
 import ppoWormImage from '../../site/assets/ppo-worm.gif';
+import ppoBipedalWalker from '../../site/assets/ppo-bipedal-walker.gif';
 import { useNavigate } from 'react-router-dom';
 
 interface CardProps {
@@ -64,10 +65,16 @@ class Home extends React.Component {
             navigateTo='/quotes'
           />
           <Card
-            title='PPO Agent playing Worm '
+            title='PPO Agent playing Worm'
             image={ppoWormImage}
             imageAlt='PPO Worm'
             navigateTo='https://huggingface.co/chirbard/ppo-Worm'
+          />
+          <Card
+            title='PPO Agent playing BipedalWalker-v3'
+            image={ppoBipedalWalker}
+            imageAlt='PPO BipedalWalker'
+            navigateTo='https://huggingface.co/chirbard/ppo-BipedalWalker-v3'
           />
         </div>
       </div>
