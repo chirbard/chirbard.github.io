@@ -1,9 +1,10 @@
-import React from "react";
-import markdownImage from "../../site/assets/markdown.png";
-import clockImage from "../../site/assets/clock.png";
-import calcImage from "../../site/assets/calc.png";
-import quoteImage from "../../site/assets/quote.png";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import markdownImage from '../../site/assets/markdown.png';
+import clockImage from '../../site/assets/clock.png';
+import calcImage from '../../site/assets/calc.png';
+import quoteImage from '../../site/assets/quote.png';
+import ppoWormImage from '../../site/assets/ppo-worm.gif';
+import { useNavigate } from 'react-router-dom';
 
 interface CardProps {
   title: string;
@@ -16,14 +17,18 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, navigateTo }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    if (navigateTo.includes('https://')) {
+      window.open(navigateTo);
+      return;
+    }
     navigate(navigateTo);
   };
 
   return (
-    <div className="cursor-pointer w-80 bg-black" onClick={handleClick}>
-      <div className="bg-[#ffffff] block -translate-x-1 -translate-y-1 border-2 border-black hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all">
-        <img src={image} alt={imageAlt} className="w-80" />
-        <h2 className="m-2 font-medium">{title}</h2>
+    <div className='cursor-pointer w-80 bg-black' onClick={handleClick}>
+      <div className='bg-[#ffffff] block -translate-x-1 -translate-y-1 border-2 border-black hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0 transition-all'>
+        <img src={image} alt={imageAlt} className='w-80' />
+        <h2 className='m-2 font-medium'>{title}</h2>
       </div>
     </div>
   );
@@ -32,31 +37,37 @@ const Card: React.FC<CardProps> = ({ title, image, imageAlt, navigateTo }) => {
 class Home extends React.Component {
   render() {
     return (
-      <div className="flex justify-center items-center my-8">
-        <div className="grid grid-cols-1 gap-4 m-auto md:grid-cols-2">
+      <div className='flex justify-center items-center my-8'>
+        <div className='grid grid-cols-1 gap-4 m-auto md:grid-cols-2'>
           <Card
-            title="FreeCodeCamp Clock"
+            title='FreeCodeCamp Clock'
             image={clockImage}
-            imageAlt="Clock"
-            navigateTo="/clock"
+            imageAlt='Clock'
+            navigateTo='/clock'
           />
           <Card
-            title="FreeCodeCamp Markdown"
+            title='FreeCodeCamp Markdown'
             image={markdownImage}
-            imageAlt="Markdown"
-            navigateTo="/markdown"
+            imageAlt='Markdown'
+            navigateTo='/markdown'
           />
           <Card
-            title="FreeCodeCamp Calculator"
+            title='FreeCodeCamp Calculator'
             image={calcImage}
-            imageAlt="Calculator"
-            navigateTo="/calculator"
+            imageAlt='Calculator'
+            navigateTo='/calculator'
           />
           <Card
-            title="FreeCodeCamp Quotes"
+            title='FreeCodeCamp Quotes'
             image={quoteImage}
-            imageAlt="Quotes"
-            navigateTo="/quotes"
+            imageAlt='Quotes'
+            navigateTo='/quotes'
+          />
+          <Card
+            title='PPO Agent playing Worm '
+            image={ppoWormImage}
+            imageAlt='PPO Worm'
+            navigateTo='https://huggingface.co/chirbard/ppo-Worm'
           />
         </div>
       </div>
