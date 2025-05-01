@@ -7,6 +7,7 @@ import ppoWormImage from '../../site/assets/ppo-worm.gif';
 import ppoBipedalWalker from '../../site/assets/ppo-bipedal-walker.gif';
 import minimaxCheckers from '../../site/assets/minimax-checkers.png';
 import termsprint from '../../site/assets/termsprint.png';
+import javaMl from '../../site/assets/java-ml.png';
 import juurai from '../../site/assets/juurai.png';
 import { useNavigate } from 'react-router-dom';
 
@@ -62,16 +63,22 @@ class Home extends React.Component {
             navigateTo='https://gemini-long-context-competition.vercel.app/'
           />
           <Card
+            title='Policy Explainer Chrome Extension - Termsprint'
+            image={termsprint}
+            imageAlt='Termsprint'
+            navigateTo='https://github.com/chirbard/Terms-Assistant'
+          />
+          <Card
+            title='Java Machine Learning | No Libraries'
+            image={javaMl}
+            imageAlt='Java ML'
+            navigateTo='https://github.com/chirbard/java-handwritten-digits-classifier'
+          />
+          <Card
             title='Minimax Checkers Algorithm'
             image={minimaxCheckers}
             imageAlt='Minimax Checkers'
             navigateTo='https://github.com/chirbard/checkers-minimax-algorithm'
-          />
-          <Card
-            title='Termsprint'
-            image={termsprint}
-            imageAlt='Termsprint'
-            navigateTo='https://github.com/chirbard/Terms-Assistant'
           />
           <Card
             title='FreeCodeCamp Clock'
