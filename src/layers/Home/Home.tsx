@@ -9,6 +9,8 @@ import minimaxCheckers from '../../site/assets/minimax-checkers.png';
 import termsprint from '../../site/assets/termsprint.png';
 import javaMl from '../../site/assets/java-ml.png';
 import juurai from '../../site/assets/juurai.png';
+import githubArt from '../../site/assets/github-art.png';
+import pathfinding from '../../site/assets/pathfinding.gif';
 import { useNavigate } from 'react-router-dom';
 
 interface CardProps {
@@ -75,10 +77,22 @@ class Home extends React.Component {
             navigateTo='https://github.com/chirbard/java-handwritten-digits-classifier'
           />
           <Card
+            title='Pathfinding Visualizer'
+            image={pathfinding}
+            imageAlt='pathfinding'
+            navigateTo='https://pathfinding-visualizer-chirbard-team.vercel.app/'
+          />
+          <Card
             title='Minimax Checkers Algorithm'
             image={minimaxCheckers}
             imageAlt='Minimax Checkers'
             navigateTo='https://github.com/chirbard/checkers-minimax-algorithm'
+          />
+          <Card
+            title='Github Contribution Art Action'
+            image={githubArt}
+            imageAlt='Github Art'
+            navigateTo='https://github.com/chirbard/Contribution-Art'
           />
           <Card
             title='FreeCodeCamp Clock'
