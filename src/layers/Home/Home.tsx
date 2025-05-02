@@ -11,6 +11,7 @@ import javaMl from '../../site/assets/java-ml.png';
 import juurai from '../../site/assets/juurai.png';
 import githubArt from '../../site/assets/github-art.png';
 import pathfinding from '../../site/assets/pathfinding.gif';
+import rlVisualizer from '../../site/assets/rl-visualizer.gif';
 import { useNavigate } from 'react-router-dom';
 
 interface CardProps {
@@ -81,6 +82,12 @@ class Home extends React.Component {
             image={pathfinding}
             imageAlt='pathfinding'
             navigateTo='https://pathfinding-visualizer-chirbard-team.vercel.app/'
+          />
+          <Card
+            title='Reinforcement Learning Visualizer'
+            image={rlVisualizer}
+            imageAlt='RL Visualizer'
+            navigateTo='https://reinforcement-learning-visualizer.vercel.app/'
           />
           <Card
             title='Minimax Checkers Algorithm'
