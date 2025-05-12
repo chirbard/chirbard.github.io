@@ -28,7 +28,26 @@ function Layout() {
     <div>
       <header className="h-24 flex justify-between items-center px-4 md:px-8">
         <p className="font-semibold w-24">MARKUS TAMM</p>
-        <LogoButton />
+        <div className="logo-github flex items-center gap-4">
+          <a
+            href='https://huggingface.co/chirbard'
+            target='_blank'
+            rel='noopener'
+            className='w-6'
+          >
+            <img src='/hf-logo.svg' alt='github-mark' />
+          </a>
+          <LogoButton />
+          <a
+            href='https://github.com/chirbard/'
+            target='_blank'
+            rel='noopener'
+            className='w-6'
+          >
+            <img src='/github-mark.svg' alt='github-mark' />
+          </a>
+        </div>
+        
         <p className="font-semibold w-24 text-right">
           {new Date().getFullYear()}
         </p>
